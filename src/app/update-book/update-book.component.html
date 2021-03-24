@@ -1,0 +1,23 @@
+<div class="container first">
+    <div class="form col-md-6 ff">
+        <form (ngSubmit)="onSubmit()">
+
+          <div class="form-group">
+            <label>Book Id</label>
+            <input type="text" class="form-control" [(ngModel)]="book.id" name="id" placeholder="Enter a unique id">
+          </div>
+            <div class="form-group">
+              <label>Book Name</label>
+              <input type="text" class="form-control" [(ngModel)]="book.bookName" name="bookName" placeholder="Enter book name">
+            </div>
+            <div class="form-group">
+                <label>Author's Name</label>
+                <input type="text" class="form-control"  [(ngModel)]="book.authorName" name="authorName" placeholder="Enter Author's name">
+              </div>
+            <button type="submit" mat-raised-button >Submit</button>
+          </form>
+    </div>
+    <div>
+        <img class="pic" src="assets/images/6 SCENE.svg">
+    </div>
+</div>

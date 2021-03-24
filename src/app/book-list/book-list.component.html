@@ -1,0 +1,22 @@
+<table class="table table-striped tab">
+    <thead>
+        <tr>
+            <th class="op">Id</th>
+            <th class="op">Book Name</th>
+            <th class="op">Author Name</th>
+            <th class="op">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let book of books">    <!--we are using the users property we defined in .ts file which is an array of type Users-->
+            <td>{{book.id}}</td>
+            <td class="cc">{{book.bookName}}</td>
+            <td class="cc">{{book.authorName}}</td>
+            <td class="bc">
+                <button (click)="updateBook(book.id)"  class="butt" mat-raised-button>Update</button>
+                <button (click)="deleteBook(book.id)" mat-raised-button color="warn"  class="butt" >Delete</button>
+            </td>
+        </tr>      
+    </tbody>
+</table>
+

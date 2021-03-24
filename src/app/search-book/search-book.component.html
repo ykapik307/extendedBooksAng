@@ -1,0 +1,18 @@
+<div class="container">
+    <p>Search Your Book Below</p>
+  </div>
+  <form class="for" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <input type="email" class="form-control" [(ngModel)]="bookName" name="bName" placeholder="Enter book name">
+    </div>
+    <button type="submit" class="butt" mat-raised-button>Submit</button>
+  </form>
+  <div class="wra">
+    <div *ngFor="let book of bookss" class="cardd">
+      <h3 class="card-title">  {{book.title}}</h3>
+      <img alt="Image not Available"src="https://covers.openlibrary.org/b/id/{{book.cover_i}}-L.jpg" class="cover">
+      <p class="card-content"><br> Author : {{book['author_name'][0]}} <br> Publiation Year : {{book.first_publish_year}} <br> Publisher : {{book['publisher'][0]}}</p>
+       
+    </div>
+   
+  </div>
