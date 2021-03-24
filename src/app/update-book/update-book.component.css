@@ -2,15 +2,43 @@
     display: flex;
     align-items: center;
     justify-self: center;
-    width: 100%;
+    width: 1200px;
     height: 60vh;
     color: blue;
     background-color: rgb(241,255,252);
     border-radius: 15px;
 }
 
+.fm{
+    max-width: 400px;
+  
+}
+
 .pic{
    
     width: 560px;
     height: 480px;
+}
+@media screen and (max-width: 600px) {
+    .first{
+        max-width: 310px;
+        font-size: 12px;
+       
+    }
+    .pic{
+        width: 160px;
+        height: 200px;
+        margin-left: -36px;
+        margin-bottom: 120px;
+    }
+    .fm{
+        font-size: 10px;
+        width: 120px;
+    }
+    .ff{
+        margin-left: -20px;
+        margin-bottom: 60px;
+        
+    }
+    
 }
